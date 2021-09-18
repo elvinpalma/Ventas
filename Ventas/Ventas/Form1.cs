@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Elvin Noé Palma Hernández     20192001535
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
