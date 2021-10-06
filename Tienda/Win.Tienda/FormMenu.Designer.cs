@@ -64,14 +64,14 @@
             this.mantenimiento2ToolStripMenuItem,
             this.mantenimiento3ToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.mantenimientoToolStripMenuItem.Text = "Producto";
             // 
             // mantenimiento1ToolStripMenuItem
             // 
             this.mantenimiento1ToolStripMenuItem.Name = "mantenimiento1ToolStripMenuItem";
             this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.mantenimiento1ToolStripMenuItem.Text = "Mantenimiento1";
+            this.mantenimiento1ToolStripMenuItem.Text = "Modelo";
             this.mantenimiento1ToolStripMenuItem.Click += new System.EventHandler(this.mantenimiento1ToolStripMenuItem_Click);
             // 
             // mantenimiento2ToolStripMenuItem
@@ -116,21 +116,21 @@
             // reporte1ToolStripMenuItem
             // 
             this.reporte1ToolStripMenuItem.Name = "reporte1ToolStripMenuItem";
-            this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reporte1ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reporte1ToolStripMenuItem.Text = "Reporte1";
             this.reporte1ToolStripMenuItem.Click += new System.EventHandler(this.reporte1ToolStripMenuItem_Click);
             // 
             // reporte2ToolStripMenuItem
             // 
             this.reporte2ToolStripMenuItem.Name = "reporte2ToolStripMenuItem";
-            this.reporte2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reporte2ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reporte2ToolStripMenuItem.Text = "Reporte2";
             this.reporte2ToolStripMenuItem.Click += new System.EventHandler(this.reporte2ToolStripMenuItem_Click);
             // 
             // reporte3ToolStripMenuItem
             // 
             this.reporte3ToolStripMenuItem.Name = "reporte3ToolStripMenuItem";
-            this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reporte3ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reporte3ToolStripMenuItem.Text = "Reporte3";
             this.reporte3ToolStripMenuItem.Click += new System.EventHandler(this.reporte3ToolStripMenuItem_Click);
             // 
