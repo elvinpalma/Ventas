@@ -55,13 +55,7 @@ namespace Win.Tienda
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrecta");
-            }
-            
-
-            
-
-            
-            
+            }            
         }
     }
 }

@@ -17,8 +17,9 @@ namespace BL.Tienda
 
             var modelo1 = new Modelo();
             modelo1.Id = 1;
-            modelo1.Descipcion = "Guitarra";
-            modelo1.Precio = 2500;
+            modelo1.Descipcion = "Vinyl Records Album: My Way";
+            modelo1.Artista = "Frank Sinatra";
+            modelo1.Precio = 2000;
             modelo1.Existencia = 15;
             modelo1.Activo = true;
 
@@ -26,8 +27,9 @@ namespace BL.Tienda
 
             var modelo2 = new Modelo();
             modelo2.Id = 2;
-            modelo2.Descipcion = "Piano";
-            modelo2.Precio = 15000;
+            modelo2.Descipcion = "Vinyl Records Album: Let it be";
+            modelo2.Artista = "The Beatles";
+            modelo2.Precio = 3000;
             modelo2.Existencia = 16;
             modelo2.Activo = true;
 
@@ -35,8 +37,9 @@ namespace BL.Tienda
 
             var modelo3 = new Modelo();
             modelo3.Id = 3;
-            modelo3.Descipcion = "Discos";
-            modelo3.Precio = 500;
+            modelo3.Descipcion = "Vinyl Records Album: The Wall";
+            modelo3.Artista = "Pink Floy";
+            modelo3.Precio = 3500;
             modelo3.Existencia = 25;
             modelo3.Activo = true;
 
@@ -56,5 +59,6 @@ namespace BL.Tienda
         public double Precio { get; set; }
         public int Existencia { get; set; }
         public bool Activo { get; set; }
+        public string Artista { get; set; }
     }
 }

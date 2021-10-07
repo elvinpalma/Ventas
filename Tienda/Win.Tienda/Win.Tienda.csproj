@@ -167,6 +167,27 @@
   <ItemGroup>
     <None Include="Vinil_Store_Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="a3570047-a6f4-467f-ab14-8cb5ccf3b4ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="slate-grey-color.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rover-mars_35-spruce-7135-verde-agua-375x375.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Azul-Gris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gris-azulado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="69564322-papel-o-plástico-de-fondo-azul-gris-oscuro-color-o-la-textura.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
