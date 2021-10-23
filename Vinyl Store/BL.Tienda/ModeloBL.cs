@@ -13,7 +13,6 @@ namespace BL.Tienda
         Contexto _contexto;
         public BindingList<Modelo> ListaModelos { get; set; } 
 
-
         public ModeloBL()
         {
             _contexto = new Contexto();
@@ -25,6 +24,7 @@ namespace BL.Tienda
         public BindingList<Modelo> ObtenerModelos()
         {
             _contexto.Modelos.Load();
+
             ListaModelos = _contexto.Modelos.Local.ToBindingList();
 
             return ListaModelos;

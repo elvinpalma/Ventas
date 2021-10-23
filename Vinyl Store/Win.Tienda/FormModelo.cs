@@ -98,5 +98,20 @@ namespace Win.Tienda
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
         }
+
+        private void idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
