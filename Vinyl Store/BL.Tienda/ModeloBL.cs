@@ -69,7 +69,7 @@ namespace BL.Tienda
             var resultado = new Resultado();
             resultado.Exitoso = true;
 
-            if (string.IsNullOrEmpty(modelo.Descipcion) == true)
+            if (string.IsNullOrEmpty(modelo.Descripcion) == true)
             {
                 resultado.Mensaje = "Ingrese una descripción";
                 resultado.Exitoso = false;
@@ -100,7 +100,7 @@ namespace BL.Tienda
     public class Modelo
     {
         public int Id { get; set; }
-        public string Descipcion { get; set; }
+        public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
         public bool Activo { get; set; }

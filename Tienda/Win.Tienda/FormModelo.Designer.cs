@@ -55,7 +55,7 @@
             this.artistaTextBox1 = new System.Windows.Forms.TextBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
             this.existenciaTextBox = new System.Windows.Forms.TextBox();
-            this.idTextBox1 = new System.Windows.Forms.TextBox();
+            this.idTextBox = new System.Windows.Forms.TextBox();
             this.precioTextBox = new System.Windows.Forms.TextBox();
             activoLabel = new System.Windows.Forms.Label();
             artistaLabel1 = new System.Windows.Forms.Label();
@@ -278,7 +278,7 @@
             this.artistaTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaModelosBindingSource, "Artista", true));
             this.artistaTextBox1.Location = new System.Drawing.Point(115, 106);
             this.artistaTextBox1.Name = "artistaTextBox1";
-            this.artistaTextBox1.Size = new System.Drawing.Size(157, 20);
+            this.artistaTextBox1.Size = new System.Drawing.Size(216, 20);
             this.artistaTextBox1.TabIndex = 3;
             // 
             // descripcionTextBox
@@ -286,7 +286,7 @@
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaModelosBindingSource, "Descripcion", true));
             this.descripcionTextBox.Location = new System.Drawing.Point(115, 80);
             this.descripcionTextBox.Name = "descripcionTextBox";
-            this.descripcionTextBox.Size = new System.Drawing.Size(157, 20);
+            this.descripcionTextBox.Size = new System.Drawing.Size(216, 20);
             this.descripcionTextBox.TabIndex = 2;
             // 
             // existenciaTextBox
@@ -294,24 +294,24 @@
             this.existenciaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaModelosBindingSource, "Existencia", true));
             this.existenciaTextBox.Location = new System.Drawing.Point(115, 158);
             this.existenciaTextBox.Name = "existenciaTextBox";
-            this.existenciaTextBox.Size = new System.Drawing.Size(157, 20);
+            this.existenciaTextBox.Size = new System.Drawing.Size(216, 20);
             this.existenciaTextBox.TabIndex = 5;
             // 
-            // idTextBox1
+            // idTextBox
             // 
-            this.idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaModelosBindingSource, "Id", true));
-            this.idTextBox1.Location = new System.Drawing.Point(115, 54);
-            this.idTextBox1.Name = "idTextBox1";
-            this.idTextBox1.ReadOnly = true;
-            this.idTextBox1.Size = new System.Drawing.Size(157, 20);
-            this.idTextBox1.TabIndex = 1;
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaModelosBindingSource, "Id", true));
+            this.idTextBox.Location = new System.Drawing.Point(115, 54);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.ReadOnly = true;
+            this.idTextBox.Size = new System.Drawing.Size(216, 20);
+            this.idTextBox.TabIndex = 1;
             // 
             // precioTextBox
             // 
             this.precioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaModelosBindingSource, "Precio", true));
             this.precioTextBox.Location = new System.Drawing.Point(115, 132);
             this.precioTextBox.Name = "precioTextBox";
-            this.precioTextBox.Size = new System.Drawing.Size(157, 20);
+            this.precioTextBox.Size = new System.Drawing.Size(216, 20);
             this.precioTextBox.TabIndex = 4;
             // 
             // FormModelo
@@ -329,7 +329,7 @@
             this.Controls.Add(existenciaLabel);
             this.Controls.Add(this.existenciaTextBox);
             this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox1);
+            this.Controls.Add(this.idTextBox);
             this.Controls.Add(precioLabel);
             this.Controls.Add(this.precioTextBox);
             this.Controls.Add(this.listaModelosBindingNavigator);
@@ -366,7 +366,7 @@
         private System.Windows.Forms.TextBox artistaTextBox1;
         private System.Windows.Forms.TextBox descripcionTextBox;
         private System.Windows.Forms.TextBox existenciaTextBox;
-        private System.Windows.Forms.TextBox idTextBox1;
+        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox precioTextBox;
     }
 }

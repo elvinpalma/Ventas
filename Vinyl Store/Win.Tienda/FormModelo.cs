@@ -67,12 +67,12 @@ namespace Win.Tienda
         {
             
 
-            if (idTextBox1.Text != "")
+            if (idTextBox.Text != "")
             {
                 var resultado = MessageBox.Show("Desea eliminar este registro?", "Eliminar", MessageBoxButtons.YesNo);
                 if (resultado == DialogResult.Yes)
                 {
-                    var id = Convert.ToInt32(idTextBox1.Text);
+                    var id = Convert.ToInt32(idTextBox.Text);
                     Eliminar(id);
                 }
                 
