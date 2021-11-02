@@ -44,10 +44,6 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -66,17 +62,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormMantenimiento2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMantenimiento2.Designer.cs">
-      <DependentUpon>FormMantenimiento2.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMantenimiento3.cs">
       <SubType>Form</SubType>
@@ -122,11 +118,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMantenimiento2.resx">
-      <DependentUpon>FormMantenimiento2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMantenimiento3.resx">
       <DependentUpon>FormMantenimiento3.cs</DependentUpon>
@@ -160,9 +156,14 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BL.Tienda.CategoriasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.ClientesBL.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.Contexto.datasource" />
     <None Include="Properties\DataSources\BL.Tienda.Modelo.datasource" />
     <None Include="Properties\DataSources\BL.Tienda.ModeloBL.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.Resultado.datasource" />
     <None Include="Properties\DataSources\BL.Tienda.SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\BL.Tienda.TiposBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -208,6 +209,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="69564322-papel-o-plástico-de-fondo-azul-gris-oscuro-color-o-la-textura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_292735080_HQ3VnxNznezosU2pjRwvHnmf8MoKqW7y.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

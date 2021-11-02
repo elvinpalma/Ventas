@@ -45,6 +45,10 @@ namespace Win.Tienda
             usuario = textBox1.Text;
             contrasena = textBox2.Text;
 
+            button1.Enabled = false;
+            button1.Text = "Verificando...";
+            Application.DoEvents();
+
             var resultado = _seguridad.Autorizar(usuario, contrasena);
 
 
@@ -56,6 +60,11 @@ namespace Win.Tienda
             {
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
