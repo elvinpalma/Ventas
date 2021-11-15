@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Tienda;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace Win.Tienda
         public FormReporte1()
         {
             InitializeComponent();
+
+            var _clienteBL = new ClientesBL();
+            var bindingSource = new BindingSource();
+            bindingSource.DataSource = _clienteBL.ObtenerClientes();
+
+            var reporte = new clienteReporte();
+            reporte.SetDataSource(bindingSource);
+
+            crystalReportViewer1.ReportSource = reporte;
+            crystalReportViewer1.RefreshReport();
         }
     }
 }
