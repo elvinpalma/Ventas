@@ -36,6 +36,7 @@
             System.Windows.Forms.Label telefonoLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClientes));
             this.listaClientesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.listaClientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -54,7 +55,6 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
-            this.listaClientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             activoLabel = new System.Windows.Forms.Label();
             direccionLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -140,6 +140,10 @@
             this.listaClientesBindingNavigator.Size = new System.Drawing.Size(387, 25);
             this.listaClientesBindingNavigator.TabIndex = 0;
             this.listaClientesBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // listaClientesBindingSource
+            // 
+            this.listaClientesBindingSource.DataSource = typeof(BL.Tienda.Cliente);
             // 
             // bindingNavigatorCountItem
             // 
@@ -289,11 +293,7 @@
             this.telefonoTextBox.Name = "telefonoTextBox";
             this.telefonoTextBox.Size = new System.Drawing.Size(231, 20);
             this.telefonoTextBox.TabIndex = 2;
-            this.telefonoTextBox.Tag = "2";
-            // 
-            // listaClientesBindingSource
-            // 
-            this.listaClientesBindingSource.DataSource = typeof(BL.Tienda.Cliente);
+            this.telefonoTextBox.Tag = "";
             // 
             // FormClientes
             // 
