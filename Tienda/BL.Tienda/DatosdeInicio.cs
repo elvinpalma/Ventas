@@ -11,17 +11,26 @@ namespace BL.Tienda
     {
         protected override void Seed(Contexto contexto)
         {
-            var usuarioAdmin1 = new Usuario();
-            usuarioAdmin1.Nombre = "admin";
-            usuarioAdmin1.Contrasena = "123";
+            var usuarioAdmin = new Usuario();
+            usuarioAdmin.Nombre = "admin";
+            usuarioAdmin.Contrasena = "123";            
+            usuarioAdmin.EsAdmin = true;
 
-            contexto.Usuarios.Add(usuarioAdmin1);
+            contexto.Usuarios.Add(usuarioAdmin);
 
-            var usuarioAdmin2 = new Usuario();
-            usuarioAdmin2.Nombre = "user";
-            usuarioAdmin2.Contrasena = "456";
+            var usuarioUser = new Usuario();
+            usuarioUser.Nombre = "user";
+            usuarioUser.Contrasena = "456";
 
-            contexto.Usuarios.Add(usuarioAdmin2);
+            contexto.Usuarios.Add(usuarioUser);
+
+            var usuarioGerente = new Usuario();
+            usuarioGerente.Nombre = "gerente";
+            usuarioGerente.Contrasena = "789";
+            usuarioGerente.PuedeAccederFacturas = false;
+            usuarioGerente.PuedeAccederReportes = true;
+
+            contexto.Usuarios.Add(usuarioGerente);
 
             var categoria1 = new Categoria();
             categoria1.Descripcion = "Rock";

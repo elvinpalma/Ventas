@@ -160,5 +160,21 @@ namespace Win.Tienda
         {
             fotoPictureBox.Image = null;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string buscar = textBox1.Text;
+            
+            if (buscar == "")
+            {
+                listaModelosBindingSource.DataSource = _modelos.ObtenerModelos();
+            }
+            else
+                {
+                listaModelosBindingSource.DataSource = _modelos.ObtenerModelos(buscar);
+                }
+
+            listaModelosBindingSource.ResetBindings(false);
+        }
     }
 }

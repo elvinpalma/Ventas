@@ -19,6 +19,16 @@ namespace Win.Tienda
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form[] form = Application.OpenForms.Cast<Form>().ToArray();
+
+            foreach (Form f in form)
+            {
+                if (f.Name != "FormMenu")
+                {
+                    f.Close();
+                }
+            }
+
             Login();
         }
 
@@ -26,6 +36,21 @@ namespace Win.Tienda
         {
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
+
+            toolStripStatusLabel1.Text = "Usuario: " + Utilidades.UsuarioActual.Nombre;
+
+            if (Utilidades.UsuarioActual.EsAdmin)
+            {
+                usuariosToolStripMenuItem.Visible = true;
+            }
+            else
+                {
+                    usuariosToolStripMenuItem.Visible = false;
+                    mantenimiento1ToolStripMenuItem.Visible = Utilidades.UsuarioActual.PuedeAccederModelos;
+                    mantenimiento2ToolStripMenuItem.Visible = Utilidades.UsuarioActual.PuedeAccederClientes;
+                    transaccion1ToolStripMenuItem.Visible = Utilidades.UsuarioActual.PuedeAccederFacturas;
+                    reportesToolStripMenuItem.Visible = Utilidades.UsuarioActual.PuedeAccederReportes;
+                }
         }
 
         private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -73,6 +98,13 @@ namespace Win.Tienda
         private void FormMenu_Load(object sender, EventArgs e)
         {
             Login();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formUsuarios = new FormUsuarios();
+            formUsuarios.MdiParent = this;
+            formUsuarios.Show();
         }
     }
 }
