@@ -8,18 +8,15 @@ using System.Threading.Tasks;
 
 namespace BL.Tienda
 {
-   
     public class ClientesBL
     {
         Contexto _contexto;
-        
         public BindingList<Cliente> ListaClientes { get; set; }
-        
+
         public ClientesBL()
         {
-            ListaClientes = new BindingList<Cliente>();
             _contexto = new Contexto();
-            
+            ListaClientes = new BindingList<Cliente>();
         }
 
         public BindingList<Cliente> ObtenerClientes()
